@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import '../Styles/EducationSection.css';
+import '../Styles/ExperienceSection.css';
 
-function EducationSection() {
+function ExperienceSection() {
   const [isOpen, setIsOpen] = useState(false);
   const [showForm, setShowForm] = useState(false);
 
@@ -9,7 +9,7 @@ function EducationSection() {
     setIsOpen(!isOpen);
   };
 
-  const handleAddEducationClick = () => {
+  const handleAddExperienceClick = () => {
     setShowForm(true);
   };
 
@@ -18,39 +18,43 @@ function EducationSection() {
   };
 
   return (
-    <div className="education-container">
-      <div className="education-header" onClick={toggleSection}>
-        <div className="education-title">
-          <span role="img" aria-label="graduation-cap">🎓</span> {/* Replace with an icon if needed */}
-          <span>Education</span>
+    <div className="experience-container">
+      <div className="experience-header" onClick={toggleSection}>
+        <div className="experience-title">
+          <span role="img" aria-label="briefcase">💼</span> {/* Replace with an icon if needed */}
+          <span>Experience</span>
         </div>
         <div className="toggle-icon">
           {isOpen ? '▲' : '▼'}
         </div>
       </div>
       {isOpen && (
-        <div className="education-content">
+        <div className="experience-content">
           {showForm ? (
-            <form className="education-form">
-              <div className="edu-form-group">
-                <label htmlFor="school">School</label>
-                <input type="text" id="school" placeholder="Enter school / university" />
+            <form className="experience-form">
+              <div className="form-group">
+                <label htmlFor="companyName">Company Name</label>
+                <input type="text" id="companyName" placeholder="Enter Company Name" />
               </div>
-              <div className="edu-form-group">
-                <label htmlFor="degree">Degree</label>
-                <input type="text" id="degree" placeholder="Enter Degree / Field Of Study" />
+              <div className="form-group">
+                <label htmlFor="positionTitle">Position Title</label>
+                <input type="text" id="positionTitle" placeholder="Enter Position Title" />
               </div>
-              <div className="edu-form-group">
+              <div className="form-group">
                 <label htmlFor="startDate">Start Date</label>
                 <input type="text" id="startDate" placeholder="Enter Start Date" />
               </div>
-              <div className="edu-form-group">
+              <div className="form-group">
                 <label htmlFor="endDate">End Date</label>
                 <input type="text" id="endDate" placeholder="Enter End Date" />
               </div>
-              <div className="edu-form-group">
+              <div className="form-group">
                 <label htmlFor="location">Location <span className="optional">optional</span></label>
                 <input type="text" id="location" placeholder="Enter Location" />
+              </div>
+              <div className="form-group">
+                <label htmlFor="description">Description <span className="optional">optional</span></label>
+                <textarea id="description" placeholder="Enter Description"></textarea>
               </div>
               <div className="form-buttons">
                 <button type="button" className="delete-button">Delete</button>
@@ -61,8 +65,8 @@ function EducationSection() {
               </div>
             </form>
           ) : (
-            <div className='edu-btn-container'>
-                <button className="add-education-button" onClick={handleAddEducationClick}>+ Education</button>
+            <div className='exp-btn-container'>
+            <button className="add-experience-button" onClick={handleAddExperienceClick}>+ Experience</button>
             </div>
           )}
         </div>
@@ -71,4 +75,4 @@ function EducationSection() {
   );
 }
 
-export default EducationSection;
+export default ExperienceSection;

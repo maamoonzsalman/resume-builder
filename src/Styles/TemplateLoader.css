@@ -1,0 +1,16 @@
+ .clear {
+    display: flex;
+    color: #991b1b;
+  }
+  
+  .clear, .load {
+    margin: 2%;
+  }
+  
+  .load {
+    background-color: #f0f1f3;
+  }
+  
+  .load-container {
+    background-color: #f0f1f3;
+  }

@@ -1,0 +1,35 @@
+.personal-details {
+    background-color: white;
+    border-radius: 15px;
+  }
+  
+  .personal {
+    font-family: 'NotoSans', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+  }
+  
+  .personal-form {
+    margin: 6%;
+  }
+  
+  .personal-label {
+    font-family: 'NotoSans', sans-serif;
+    font-weight: bold;
+  }
+  
+  .form-group {
+    margin-top: 3.5%;
+  }
+  
+  .recommended {
+    font-weight: bold;
+    font-size: 0.6em;
+    color: #999;
+  }
+
+  #fullName, #email, #phoneNumber, #address {
+    padding: 2.5%;
+    width: 95%;
+    margin-top: 3.5%;
+}
