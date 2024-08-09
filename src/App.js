@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
 import SideBarNav from './Components/SideBarNav';
+import FormContainer from './Components/FormContainer';
 import './style.css';
 
 const App = () => {
   return (
     <div className='app'>
-      
-      <h1>Hello, React!</h1>
-      <SideBarNav/>
-    
+      <div className='side-container'>
+        <SideBarNav/>
+        <FormContainer/>
+      </div>
     </div>
   );
 };
