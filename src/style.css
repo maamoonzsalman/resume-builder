@@ -151,7 +151,7 @@ input {
 }
 
 input::placeholder {
-  color: #bbb;
+  color: #999;
   font-size: 0.9em;
 }
 

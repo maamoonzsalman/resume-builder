@@ -1,4 +1,5 @@
 import React from 'react';
+import EducationSection from './EducationSection';
 
 function FormContainer() {
     return (    
@@ -46,7 +47,7 @@ function FormContainer() {
             </div>
 
             <div className='education-section form-piece'>
-
+                <EducationSection/>
             </div>
 
             <div className='experience-section form-piece'>
