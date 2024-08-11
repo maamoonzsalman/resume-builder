@@ -64,6 +64,10 @@ body {
   justify-content: center;
 }
 
+.content-piece, .customize-piece {
+  padding: 3%;
+}
+
 .content {
   background-color: #f0f1f3;
   border-radius: 15px;
