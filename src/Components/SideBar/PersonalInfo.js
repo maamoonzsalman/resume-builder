@@ -1,14 +1,14 @@
 import React from 'react';
 import '../../Styles/PersonalInfo.css'
 
-const PersonalInfo = () => {
+const PersonalInfo = ({ personalDetails }) => {
     return (
       <div className="header-container">
-        <h1 className="name">Maamoon Salman</h1>
+        <h1 className="name"> {personalDetails.name}</h1>
         <div className="contact-container">
-          <span className="contact-item">📧 maamoonsalman@gmail.com</span>
-          <span className="contact-item">📞 5108254409</span>
-          <span className="contact-item">📍 Fremont, California</span>
+          <span className="contact-item">📧 {personalDetails.email}</span>
+          <span className="contact-item">📞 {personalDetails.phone}</span>
+          <span className="contact-item">📍 {personalDetails.location}</span>
         </div>
       </div>
     );
