@@ -28,6 +28,10 @@
 
 /* Add more font-face rules as needed for other font styles and weights */
 
+.app {
+  display: flex;
+}
+
 body {
   margin-top: 2%;
   margin-left: 1.3%;
@@ -111,3 +115,16 @@ input:focus {
   background-color: #e9ecef;
 }
 
+.resume-side {
+  margin-left: 1.3%;
+  display: grid;
+  grid-template-rows: 0.9fr 5fr;
+  grid-template-columns: 67vw;
+  background-color: white;
+}
+
+.test {
+  background-color: blue;
+}
+
+ 

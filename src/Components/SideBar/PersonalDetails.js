@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Styles/PersonalDetails.css';
+import '../../Styles/PersonalDetails.css';
 
 function PersonalDetails() {
     return (

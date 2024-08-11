@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../Styles/ExperienceSection.css';
+import '../../Styles/ExperienceSection.css';
 
 function ExperienceSection() {
   const [isOpen, setIsOpen] = useState(false);

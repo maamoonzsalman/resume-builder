@@ -1,0 +1,55 @@
+/* General container styles */
+.resume-container {
+    margin: 5%;
+}
+  
+  .section-title-wrapper {
+    background-color: #f0f1f3; /* Gray bar */
+    padding: 5px 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .section-title {
+    font-family: 'NotoSans';
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #1e3a5f;
+    margin: 0;
+  }
+  
+  .entry {
+    margin: 20px 0;
+    font-family: 'NotoSans';
+
+  }
+
+  .edu-column, .exp-column {
+    margin-right: 4%;
+  }
+  
+  .entry-header {
+    display: flex;
+    
+    align-items: flex-start;
+  }
+  
+  .entry-title {
+    font-weight: bold;
+  }
+  
+  .entry-subtitle {
+    margin-bottom: 10px;
+  }
+  
+  .entry-date {
+    white-space: nowrap;
+  }
+  
+  .entry-location {
+    line-height: 1.5;
+  }
+  
+  

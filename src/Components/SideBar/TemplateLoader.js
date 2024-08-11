@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Styles/TemplateLoader.css'
+import '../../Styles/TemplateLoader.css'
 
 function TemplateLoader() {
     return (

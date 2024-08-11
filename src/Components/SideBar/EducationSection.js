@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../Styles/EducationSection.css';
+import '../../Styles/EducationSection.css';
 
 function EducationSection() {
   const [isOpen, setIsOpen] = useState(false);
