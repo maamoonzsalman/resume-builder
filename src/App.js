@@ -13,6 +13,8 @@ const App = () => {
     location: ''
   });
 
+  const [educationEntries, setEducationEntries] = useState([]);
+
   return (
     <div className='app'>
       <div className='side-container'>
@@ -20,11 +22,13 @@ const App = () => {
         <FormContainer
           personalDetails={personalDetails}
           setPersonalDetails={setPersonalDetails}
+          educationEntries={educationEntries}
+          setEducationEntries={setEducationEntries}
         />
       </div>
       <div className='resume-side'>
         <PersonalInfo personalDetails={personalDetails}/>
-        <ResumeInfo/>
+        <ResumeInfo educationEntries={educationEntries}/>
       </div>
     </div>
   );
