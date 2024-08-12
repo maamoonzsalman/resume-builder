@@ -4,7 +4,14 @@ import PersonalDetails from './PersonalDetails';
 import EducationSection from './EducationSection';
 import ExperienceSection from './ExperienceSection';
 
-const FormContainer = ({ personalDetails, setPersonalDetails, educationEntries, setEducationEntries }) => {
+const FormContainer = ({
+    personalDetails, 
+    setPersonalDetails, 
+    educationEntries, 
+    setEducationEntries,
+    experienceEntries,
+    setExperienceEntries 
+}) => {
     return (    
         <div className='form-container'>
             
@@ -24,7 +31,7 @@ const FormContainer = ({ personalDetails, setPersonalDetails, educationEntries, 
             </div>
 
             <div className='experience-section form-piece'>
-                <ExperienceSection/>
+                <ExperienceSection experienceEntries={experienceEntries} setExperienceEntries={setExperienceEntries} />
             </div>
         </div>
     );    
